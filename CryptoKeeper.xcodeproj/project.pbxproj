@@ -27,6 +27,13 @@
 		20ABFF0D2918340100A775F7 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFF0C2918340100A775F7 /* StatisticModel.swift */; };
 		20ABFF0F291834EA00A775F7 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFF0E291834EA00A775F7 /* PreviewProvider.swift */; };
 		20ABFF112918377000A775F7 /* CoinDetailSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFF102918377000A775F7 /* CoinDetailSectionModel.swift */; };
+		20ABFF132919161700A775F7 /* CoinDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFF122919161700A775F7 /* CoinDetailsViewModel.swift */; };
+		20ABFF152919305100A775F7 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFF142919305100A775F7 /* ChartData.swift */; };
+		20ABFF172919316000A775F7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFF162919316000A775F7 /* Date.swift */; };
+		20ABFF192919337500A775F7 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ABFF182919337500A775F7 /* ChartView.swift */; };
+		20E0F8D0291972D3007A567E /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E0F8CF291972D3007A567E /* libswiftWebKit.tbd */; };
+		20E0F8D4291978A5007A567E /* CustomLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0F8D3291978A5007A567E /* CustomLoadingIndicator.swift */; };
+		20E0F8D629197A4C007A567E /* LazyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E0F8D529197A4C007A567E /* LazyNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,13 @@
 		20ABFF0C2918340100A775F7 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		20ABFF0E291834EA00A775F7 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		20ABFF102918377000A775F7 /* CoinDetailSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailSectionModel.swift; sourceTree = "<group>"; };
+		20ABFF122919161700A775F7 /* CoinDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailsViewModel.swift; sourceTree = "<group>"; };
+		20ABFF142919305100A775F7 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		20ABFF162919316000A775F7 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		20ABFF182919337500A775F7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		20E0F8CF291972D3007A567E /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
+		20E0F8D3291978A5007A567E /* CustomLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingIndicator.swift; sourceTree = "<group>"; };
+		20E0F8D529197A4C007A567E /* LazyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E0F8D0291972D3007A567E /* libswiftWebKit.tbd in Frameworks */,
 				20ABFEFE29181F4D00A775F7 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +84,7 @@
 			children = (
 				20ABFED72917EEE600A775F7 /* CryptoKeeper */,
 				20ABFED62917EEE600A775F7 /* Products */,
+				20E0F8CE291972D3007A567E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +140,8 @@
 		20ABFEE82917EF2600A775F7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				20E0F8D3291978A5007A567E /* CustomLoadingIndicator.swift */,
+				20E0F8D529197A4C007A567E /* LazyNavigationView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -134,6 +152,7 @@
 				20ABFEFF2918209B00A775F7 /* Double.swift */,
 				20ABFF0629182A7300A775F7 /* Color.swift */,
 				20ABFF0E291834EA00A775F7 /* PreviewProvider.swift */,
+				20ABFF162919316000A775F7 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,6 +163,7 @@
 				20ABFEFA291805AD00A775F7 /* Coins.swift */,
 				20ABFF0C2918340100A775F7 /* StatisticModel.swift */,
 				20ABFF102918377000A775F7 /* CoinDetailSectionModel.swift */,
+				20ABFF142919305100A775F7 /* ChartData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +208,7 @@
 		20ABFF022918284E00A775F7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				20ABFF122919161700A775F7 /* CoinDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -198,8 +219,17 @@
 				20ABFF042918287700A775F7 /*  CoinDetailsView.swift */,
 				20ABFF082918307F00A775F7 /* CoinDetailsSection.swift */,
 				20ABFF0A2918312600A775F7 /* StatisticView.swift */,
+				20ABFF182919337500A775F7 /* ChartView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		20E0F8CE291972D3007A567E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20E0F8CF291972D3007A567E /* libswiftWebKit.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +310,7 @@
 			files = (
 				20ABFEF12917F14C00A775F7 /* TopMoversView.swift in Sources */,
 				20ABFEF52917F7FB00A775F7 /* AllCoinsView.swift in Sources */,
+				20E0F8D629197A4C007A567E /* LazyNavigationView.swift in Sources */,
 				20ABFF112918377000A775F7 /* CoinDetailSectionModel.swift in Sources */,
 				20ABFEEF2917EFF600A775F7 /* HomeView.swift in Sources */,
 				20ABFEF92918010C00A775F7 /* HomeViewModel.swift in Sources */,
@@ -287,11 +318,16 @@
 				20ABFF0729182A7300A775F7 /* Color.swift in Sources */,
 				20ABFEFB291805AD00A775F7 /* Coins.swift in Sources */,
 				20ABFF0B2918312600A775F7 /* StatisticView.swift in Sources */,
+				20ABFF152919305100A775F7 /* ChartData.swift in Sources */,
 				20ABFED92917EEE600A775F7 /* CryptoKeeperApp.swift in Sources */,
+				20ABFF172919316000A775F7 /* Date.swift in Sources */,
+				20ABFF132919161700A775F7 /* CoinDetailsViewModel.swift in Sources */,
 				20ABFF052918287700A775F7 /*  CoinDetailsView.swift in Sources */,
 				20ABFF0D2918340100A775F7 /* StatisticModel.swift in Sources */,
+				20E0F8D4291978A5007A567E /* CustomLoadingIndicator.swift in Sources */,
 				20ABFEF72917F81000A775F7 /* CoinRowView.swift in Sources */,
 				20ABFF0F291834EA00A775F7 /* PreviewProvider.swift in Sources */,
+				20ABFF192919337500A775F7 /* ChartView.swift in Sources */,
 				20ABFF002918209B00A775F7 /* Double.swift in Sources */,
 				20ABFEF32917F15E00A775F7 /* TopMoversItemView.swift in Sources */,
 				20ABFF092918307F00A775F7 /* CoinDetailsSection.swift in Sources */,
@@ -435,6 +471,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dauka.CryptoKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,6 +503,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dauka.CryptoKeeper;

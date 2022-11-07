@@ -20,14 +20,23 @@ struct StatisticView: View {
             
             if let percentChange = model.percentageChange {
                 HStack(spacing: 4) {
-                    Image(systemName: "triangle.fill")
-                        .font(.caption)
+                    if percentChange > 0 {
+                        Image(systemName: "arrowtriangle.up.fill")
+                            .font(.caption)
+                            .foregroundColor(.green)
+                    } else {
+                        Image(systemName: "arrowtriangle.down.fill")
+                            .font(.caption)
+                            .foregroundColor(.red)
+                    }
+                    
                         
                     Text(percentChange.toPercentString())
                         .font(.caption)
                         .bold()
+                    
+                    .foregroundColor(percentChange > 0 ? .green : .red)
                 }
-                    .foregroundColor(.green)
             }
         }
     }
